@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>行政小红书 · 新人入职</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 手机外框 -->
+  <div class="phone">
+    <!-- 顶部状态栏 -->
+    <div class="statusbar">
+      <span class="time" id="clock">11:23</span>
+      <span class="status-icons">
+        <span class="signal">
+          <i></i><i></i><i></i><i></i>
+        </span>
+        <span class="wifi">
+          <svg viewBox="0 0 24 18" width="20" height="15"><path d="M12 15.5a1.6 1.6 0 100-3.2 1.6 1.6 0 000 3.2zM12 3C7.3 3 3.1 4.9 0 7.9l2.1 2.1C4.6 7.5 8.1 6 12 6s7.4 1.5 9.9 4l2.1-2.1C20.9 4.9 16.7 3 12 3zm0 4.5c-3 0-5.7 1.2-7.7 3.1l2.1 2.1C7.8 11.4 9.8 10.5 12 10.5s4.2.9 5.6 2.2l2.1-2.1C17.7 8.7 15 7.5 12 7.5z" fill="currentColor"/></svg>
+        </span>
+        <span class="battery">
+          <span class="battery-body"><span class="battery-level"></span></span>
+          <span class="battery-bolt">⚡</span>
+        </span>
+      </span>
+    </div>
+
+    <!-- 启动页 / 闪屏 -->
+    <div class="splash" id="splash">
+      <div class="splash-logo">行政小红书</div>
+      <div class="splash-slogan">你 的 生 活 兴 趣 社 区</div>
+      <div class="splash-bottombar"></div>
+    </div>
+
+    <!-- 主页 -->
+    <div class="app" id="app">
+      <!-- 顶部导航栏 -->
+      <header class="topbar">
+        <button class="icon-btn msg-btn" aria-label="消息">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#333" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
+          </svg>
+        </button>
+
+        <nav class="tabs">
+          <span class="tab" data-tab="follow">关注<sup class="badge">4</sup></span>
+          <span class="tab active" data-tab="discover">发现</span>
+          <span class="tab" data-tab="redcoin">夺REDcoin</span>
+        </nav>
+
+        <button class="icon-btn search-btn" aria-label="搜索">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#333" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/>
+          </svg>
+        </button>
+      </header>
+
+      <!-- 二级分类栏 -->
+      <div class="subtabs">
+        <span class="subtab active">推荐</span>
+        <span class="subtab">入职必读</span>
+        <span class="subtab">行政指南</span>
+        <span class="subtab">园区攻略</span>
+        <span class="subtab">福利活动</span>
+        <span class="subtab">同事说</span>
+        <span class="subtab-more">⌄</span>
+      </div>
+
+      <!-- 瀑布流内容 -->
+      <main class="feed" id="feed"></main>
+
+      <!-- 底部导航栏 -->
+      <nav class="tabbar">
+        <span class="tabbar-item active">首页</span>
+        <span class="tabbar-item">市集</span>
+        <span class="tabbar-item plus"><span class="plus-btn">+</span></span>
+        <span class="tabbar-item">消息<i class="dot"></i></span>
+        <span class="tabbar-item">我</span>
+      </nav>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
